@@ -1,4 +1,4 @@
-# Software & Embedded Projects
+# Software & Embedded Hardware Projects
 
 Hey! This is where I keep my personal coding projects, school assignments, and hands-on hardware/embedded projects.
 
