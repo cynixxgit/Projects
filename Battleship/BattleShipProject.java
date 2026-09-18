@@ -39,7 +39,7 @@ public class Battleship
           System.out.println("\nCan't put a ship there!\n");
       }
       else if(ans.toLowerCase().equals("b"))
-        System.out.println("\n" + b + "\n");
+        System.out.println("\n" + b.toString());
       else if(ans.toLowerCase().equals("p"))
       {
         if(b.foundShip(3) && b.foundShip(4))
@@ -81,7 +81,7 @@ public class Battleship
         scan.nextLine();
       }
       else if(ans.toLowerCase().equals("b"))
-        System.out.println("\n" + b + "\n");
+        System.out.println("\n" + b.toString());
     }
     System.out.println("Game over!");
   }
