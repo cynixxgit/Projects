@@ -19,21 +19,16 @@ public class Board
   }
 
   // Output to String
-  public String toString()
-  {
-    // Temporary Storage
-    String output = "";
-    // Create Output
-    for (int row = 0; row < squares.length; row++)
-    {
-      for (int col = 0; col < squares[0].length; col++)
-      {
-        output += squares[row][col] + " ";
-      }
-      output += "\n";
+public String toString() {
+    StringBuilder output = new StringBuilder();
+    for (int row = 0; row < squares.length; row++) {
+        for (int col = 0; col < squares[0].length; col++) {
+            output.append(squares[row][col]).append(" ");
+        }
+        output.append("\n");
     }
-    return output;
-  }
+    return output.toString();
+}
 
   // Create New Ship at Specified Location
   public boolean addShip(int row, int col, int len, boolean horizontal)
