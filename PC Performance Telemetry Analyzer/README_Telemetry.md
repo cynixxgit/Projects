@@ -82,7 +82,7 @@ The analysis also calculates:
 2. Allow the program to collect system data.
 3. The measurements are exported to `hardware_log.csv`.
 4. Import `hardware_log.csv` into MATLAB.
-5. Run the MATLAB analysis script.
+5. Run the MATLAB analysis script `analyze_hardware.m`.
 6. Review the generated performance plots and statistics.
 
 ## Project Structure
