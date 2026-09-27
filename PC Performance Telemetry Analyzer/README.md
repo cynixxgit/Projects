@@ -1,12 +1,10 @@
 # PC Performance Telemetry Analyzer
 
-A system performance monitoring and analysis project that collects realtime PC telemetry (specifically CPU utilization & frequency, and ram utilization) using Python and analyzes the recorded data in MATLAB.
+A system performance monitoring and analysis project that collects realtime PC telemetry using Python and analyzes the recorded data in MATLAB.
 
 The project collects CPU utilization, CPU frequency, and memory utilization at one-second intervals, stores the measurements in a CSV file, and uses MATLAB to visualize system behavior and calculate performance statistics.
 
 ## Overview
-
-This project was created to explore how software tools can be used to collect and analyze computer system performance data.
 
 ```text
 PC System Metrics
@@ -45,10 +43,10 @@ Python handles the data acquisition and logging while MATLAB is used for post-pr
 The Python telemetry logger uses the `psutil` library to collect:
 
 
-| Time |
-| CPU Utilization % |
-| CPU Frequency MHz |
-| RAM Utilization % |
+Time
+CPU Utilization %
+CPU Frequency MHz
+RAM Utilization %
 
 A typical output file has the following structure:
 
@@ -80,7 +78,7 @@ The analysis also calculates:
 
 ## Example Workflow
 
-1. Run the Python telemetry logger.
+1. Run the Python program `hardware_monitor.py`.
 2. Allow the program to collect system data.
 3. The measurements are exported to `hardware_log.csv`.
 4. Import `hardware_log.csv` into MATLAB.
@@ -98,7 +96,7 @@ PC-Performance-Telemetry-Analyzer/
 └── README.md
 ```
 
-### `telemetry.py`
+### `hardware_monitor.py`
 
 Collects system performance data using `psutil` and exports the measurements to a CSV file.
 
@@ -108,7 +106,7 @@ Imports the CSV dataset, calculates summary statistics, and generates performanc
 
 ### `hardware_log.csv`
 
-Contains telemetry captured during a monitoring session.
+Contains statistics recorded during after running the `hardware_monitor` program.
 
 ## Installation
 
