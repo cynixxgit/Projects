@@ -2,7 +2,7 @@ import psutil
 import csv
 import os
 
-# Save directly to Desktop
+# Save file to PC
 filename = os.path.join(
     os.path.expanduser("~"),
     "Desktop",
